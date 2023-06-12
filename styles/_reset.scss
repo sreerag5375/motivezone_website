@@ -6,16 +6,19 @@
   box-sizing: border-box;
 }
 
-ul,ol{
-    list-style: none;
+ul,
+ol {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-body{
-    font-family: Helvetica Neue light;
-    font-size: 15px;
+body {
+  font-family: Helvetica Neue light;
+  font-size: 15px;
 }

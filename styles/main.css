@@ -34,8 +34,11 @@
   box-sizing: border-box;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 a {
@@ -48,8 +51,85 @@ body {
   font-size: 15px;
 }
 
-header {
-  display: flex;
+.primary-btn {
+  padding: 6px 20px;
+  border-radius: 5px;
+  background-color: rgb(12, 144, 232);
+  font-family: "Helvetica Neue medium";
+  color: white;
+}
+
+header .d-flex {
   align-items: center;
-  justify-content: space-between;
+}
+@media (min-width: 640px) {
+  header .d-flex {
+    height: 70px;
+    background-color: orange;
+  }
+}
+@media (min-width: 960px) {
+  header .d-flex {
+    height: 110px;
+    background-color: orange;
+  }
+}
+@media (min-width: 1200px) {
+  header .d-flex {
+    height: 116px;
+    background-color: orange;
+  }
+}
+@media (min-width: 1600px) {
+  header .d-flex {
+    height: 130px;
+    background-color: orange;
+  }
+}
+@media (max-width: 374px) {
+  header .logo {
+    transform: translateY(-18px);
+    max-width: 90px;
+  }
+}
+@media (min-width: 375px) {
+  header .logo {
+    transform: translateY(-18px);
+    max-width: 120px;
+  }
+}
+@media (min-width: 960px) {
+  header .logo {
+    max-width: 160px;
+  }
+}
+@media (min-width: 1200px) {
+  header .logo {
+    transform: translateY(-30px);
+    max-width: 190px;
+  }
+}
+@media (min-width: 1600px) {
+  header .logo {
+    max-width: 210px;
+  }
+}
+header .logo img {
+  width: 100%;
+}
+@media (min-width: 640px) {
+  header .navbar-items ul {
+    display: flex;
+    gap: 30px;
+  }
+}
+@media (min-width: 640px) and (min-width: 960px) {
+  header .navbar-items ul {
+    gap: 40px;
+  }
+}
+@media (min-width: 640px) {
+  header .navbar-items ul li {
+    font-family: "Helvetica Neue medium";
+  }
 }/*# sourceMappingURL=main.css.map */
