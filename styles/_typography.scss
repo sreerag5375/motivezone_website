@@ -1,0 +1,11 @@
+h1 {
+    @include respond-above(sm) {
+        font-family: 'Helvetica Neue bold';
+        font-size: 30px;
+    }
+
+    @include respond-above(xl) {
+        font-family: 'Helvetica Neue bold';
+        font-size: 40px;
+    }
+}

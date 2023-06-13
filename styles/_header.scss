@@ -1,65 +1,77 @@
 header {
+
+  // header styles
   .d-flex {
+    padding: 0;
     align-items: center;
+    background-color: orangered;
+
     @include respond-above(sm) {
       height: 70px;
-      background-color: orange;
     }
+
     @include respond-above(md) {
       height: 110px;
-      background-color: orange;
     }
 
     @include respond-above(lg) {
       height: 116px;
-      background-color: orange;
     }
+
     @include respond-above(xl) {
       height: 130px;
-      background-color: orange;
     }
   }
 
+  //logo styles
   .logo {
-    @include respond-below(xs) {
-      transform: translateY(-18px);
-      max-width: 90px;
-    }
-    @include respond-above(xs) {
-      transform: translateY(-18px);
-      max-width: 120px;
-    }
-    @include respond-above(md) {
-      max-width: 160px;
-    }
-    @include respond-above(lg) {
-      transform: translateY(-30px);
-      max-width: 190px;
-    }
-    @include respond-above(xl) {
-      max-width: 210px;
-    }
 
     img {
       width: 100%;
     }
+
+    @include respond-below(xs) {
+      transform: translateY(-18px);
+      max-width: 90px;
+    }
+
+    @include respond-above(xs) {
+      transform: translateY(-18px);
+      max-width: 120px;
+    }
+
+    @include respond-above(md) {
+      max-width: 160px;
+    }
+
+    @include respond-above(lg) {
+      transform: translateY(-30px);
+      max-width: 190px;
+    }
+
+    @include respond-above(xl) {
+      max-width: 210px;
+    }
+
+
   }
 
+  //navbar items styles
   .navbar-items {
-  
     ul {
-      @include respond-above(sm) {
-       display: flex;
-       gap:30px;
-
-       @include respond-above(md){
-        gap: 40px;
-       }
-
-       li{
-        font-family: 'Helvetica Neue medium';
-       }
+      li {
+        font-family: "Helvetica Neue medium";
       }
+
+      @include respond-above(sm) {
+        display: flex;
+        gap: 20px;
+
+        @include respond-above(md) {
+          gap: 40px;
+        }
+      }
+
     }
   }
 }

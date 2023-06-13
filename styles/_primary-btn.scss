@@ -1,8 +1,12 @@
-.primary-btn{
-    padding: 6px 20px;
-    border-radius: 5px;
-    background-color: rgb(12, 144, 232);
-    font-family: 'Helvetica Neue medium';
-    color: white;
-    
+.primary-btn {
+  transition: ease-in 0.3s;
+  padding: 6px 20px;
+  border-radius: 5px;
+  background-color: $secondary-color;
+  font-family: "Helvetica Neue medium";
+  color: white;
+
+  &:hover {
+    color: $primary-color;
+  }
 }

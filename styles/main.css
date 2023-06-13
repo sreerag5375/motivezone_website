@@ -46,45 +46,69 @@ a {
   color: inherit;
 }
 
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
 body {
   font-family: Helvetica Neue light;
   font-size: 15px;
 }
 
+@media (min-width: 640px) {
+  h1 {
+    font-family: "Helvetica Neue bold";
+    font-size: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  h1 {
+    font-family: "Helvetica Neue bold";
+    font-size: 40px;
+  }
+}
+
 .primary-btn {
+  transition: ease-in 0.3s;
   padding: 6px 20px;
   border-radius: 5px;
-  background-color: rgb(12, 144, 232);
+  background-color: #FF9C00;
   font-family: "Helvetica Neue medium";
   color: white;
 }
+.primary-btn:hover {
+  color: #072753;
+}
 
 header .d-flex {
+  padding: 0;
   align-items: center;
+  background-color: orangered;
 }
 @media (min-width: 640px) {
   header .d-flex {
     height: 70px;
-    background-color: orange;
   }
 }
 @media (min-width: 960px) {
   header .d-flex {
     height: 110px;
-    background-color: orange;
   }
 }
 @media (min-width: 1200px) {
   header .d-flex {
     height: 116px;
-    background-color: orange;
   }
 }
 @media (min-width: 1600px) {
   header .d-flex {
     height: 130px;
-    background-color: orange;
   }
+}
+header .logo img {
+  width: 100%;
 }
 @media (max-width: 374px) {
   header .logo {
@@ -114,13 +138,13 @@ header .d-flex {
     max-width: 210px;
   }
 }
-header .logo img {
-  width: 100%;
+header .navbar-items ul li {
+  font-family: "Helvetica Neue medium";
 }
 @media (min-width: 640px) {
   header .navbar-items ul {
     display: flex;
-    gap: 30px;
+    gap: 20px;
   }
 }
 @media (min-width: 640px) and (min-width: 960px) {
@@ -128,8 +152,28 @@ header .logo img {
     gap: 40px;
   }
 }
+
+.hero .container-md {
+  background-color: blueviolet;
+  height: 90vh;
+}
 @media (min-width: 640px) {
-  header .navbar-items ul li {
-    font-family: "Helvetica Neue medium";
+  .hero .container-md {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.hero .container-md .hero-content {
+  color: white;
+}
+@media (min-width: 1200px) {
+  .hero .container-md .hero-content {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1600px) {
+  .hero .container-md .hero-content {
+    max-width: 640px;
   }
 }/*# sourceMappingURL=main.css.map */
